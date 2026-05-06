@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&family=Zen+Antique&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Shippori Mincho', 'Playfair Display', serif;
+  --font-traditional: 'Shippori Mincho', serif;
+  --font-japanese: 'Shippori Mincho', serif;
+  --font-antique: 'Zen Antique', serif;
+  
+  --color-brand-navy: #0A1931;
+  --color-brand-red: #FF3B3F;
+  --color-brand-accent-blue: #2C7AAB;
+  --color-brand-dark: #1A1A1A;
+  --color-brand-light-gray: #EAEAEA;
+  --color-brand-medium-gray: #BDBDBD;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-brand-dark antialiased selection:bg-brand-accent-blue/30 selection:text-brand-dark;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  /* Minimalist custom scrollbar */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+    background-color: transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #0A1931; /* brand-navy */
+    border-radius: 4px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
