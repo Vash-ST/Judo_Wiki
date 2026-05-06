@@ -6,15 +6,8 @@ export default function Hero() {
       className="relative min-h-[60vh] flex flex-col items-center justify-center pt-32 pb-48 overflow-hidden bg-brand-navy" 
       id="hero-section"
     >
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <img 
-          src="/assets/portada_01.jpg" 
-          alt="Mountain Sunset"
-          className="w-full h-full object-cover opacity-40 mix-blend-overlay"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-navy via-brand-navy/60 to-brand-navy/20" />
-      </div>
+      {/* Background Color */}
+      <div className="absolute inset-0 z-0 bg-brand-navy" />
 
       <div className="container relative z-10 mx-auto px-4 flex flex-col items-center text-center" id="hero-content">
         {/* All text and buttons removed per user request for a cleaner minimalist look */}
