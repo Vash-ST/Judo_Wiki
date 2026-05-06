@@ -9,7 +9,7 @@ export default function SaludBienestar() {
       jp: "世界保健機関",
       desc: "Directrices mundiales sobre la actividad física para la salud y la prevención de enfermedades.",
       icon: <ShieldCheck className="w-6 h-6" />,
-      img: "/assets/logo_uc.png.jpg",
+      img: "/assets/logo_uc.jpg",
       path: "/recomendacion-oms"
     },
     {
