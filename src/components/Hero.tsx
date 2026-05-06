@@ -1,29 +1,11 @@
-import { motion } from 'motion/react';
-import { Link } from 'react-router-dom';
-
 export default function Hero() {
   return (
     <section 
       className="relative min-h-[60vh] flex flex-col items-center justify-center pt-32 pb-48 overflow-hidden bg-brand-navy" 
       id="hero-section"
     >
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <img 
-          src="/assets/portada_01.jpg"
-          alt="Dojo Background"
-          className="w-full h-full object-cover opacity-40 mix-blend-overlay"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-navy via-brand-navy/60 to-brand-navy/20" />
-      </div>
-
-      <div className="container relative z-10 mx-auto px-4 flex flex-col items-center text-center" id="hero-content">
-        <h1 className="text-4xl md:text-6xl font-black text-white mb-6 uppercase tracking-wider">Bienvenido al Judo</h1>
-        <p className="text-white/80 text-xl mb-8 max-w-2xl">Aprende los principios y técnicas de la disciplina con pasión y dedicación.</p>
-        <Link to="/cursos" className="bg-brand-red text-white py-3 px-8 font-bold uppercase transition-colors rounded-full hover:bg-white hover:text-brand-navy">
-            Explorar Cursos
-        </Link>
-      </div>
+      {/* Background Color */}
+      <div className="absolute inset-0 z-0 bg-brand-navy" />
 
       {/* Sidebar Elements */}
       <div className="absolute top-1/2 left-8 -translate-y-1/2 flex flex-col space-y-6 z-10 opacity-30">
