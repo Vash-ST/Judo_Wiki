@@ -229,7 +229,7 @@ export default function NageWaza() {
       : (activeSubCategory === 'MA-SUTEMI-WAZA')
       ? '/assets/tarjeta_4.jpg'
       : (activeSubCategory === 'YOKO-SUTEMI-WAZA')
-      ? '/assets/targeta_5.jpg'
+      ? '/assets/tarjeta_5.jpg'
       : '/assets/tarjeta.png';
 
     // Video URL: Use specific IDs for TE-WAZA, ASHI-WAZA and KOSHI-WAZA

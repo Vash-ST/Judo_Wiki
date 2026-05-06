@@ -48,7 +48,7 @@ export default function Tecnicas() {
             >
               <Link to="/nage-waza" className="block aspect-[16/10] w-full bg-brand-navy overflow-hidden shadow-lg group-hover:shadow-2xl transition-all duration-500 hover:scale-[1.02]">
                 <img 
-                  src="/assets/logo_uc.png.jpg" 
+                  src="/assets/logo_uc.jpg" 
                   alt="Nage-waza style"
                   className="w-full h-full object-cover bg-[#eb1212] opacity-60 group-hover:opacity-80 transition-opacity duration-500 grayscale group-hover:grayscale-0"
                 />
@@ -76,7 +76,7 @@ export default function Tecnicas() {
             >
               <Link to="/katame-waza" className="block aspect-[16/10] w-full bg-brand-dark overflow-hidden shadow-lg group-hover:shadow-2xl transition-all duration-500 hover:scale-[1.02]">
                 <img 
-                  src="/assets/logo_uc.png.jpg" 
+                  src="/assets/logo_uc.jpg" 
                   alt="Katame-waza style"
                   className="w-full h-full object-cover bg-[#eb1212] opacity-60 group-hover:opacity-80 transition-opacity duration-500 grayscale group-hover:grayscale-0"
                 />
