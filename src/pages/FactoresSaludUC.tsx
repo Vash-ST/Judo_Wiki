@@ -111,7 +111,7 @@ export default function FactoresSaludUC() {
     <div className="min-h-screen bg-[#f8f8f8] text-brand-dark font-sans relative overflow-hidden">
       <div className="fixed inset-0 pointer-events-none opacity-[0.02]">
         <img 
-          src="https://images.unsplash.com/photo-1596700021651-7f8d689622ed?auto=format&fit=crop&q=80&w=2000" 
+          src="/assets/rei_saludos.jpg" 
           alt="Pattern"
           className="w-full h-full object-cover grayscale"
         />

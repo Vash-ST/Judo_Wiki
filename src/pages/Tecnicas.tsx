@@ -10,7 +10,7 @@ export default function Tecnicas() {
 
       <div className="fixed inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1596700021651-7f8d689622ed?auto=format&fit=crop&q=80&w=2000" 
+          src="/assets/fondo_tecnicas.jpg" 
           alt="Camellia Background"
           className="w-full h-full object-cover opacity-60 scale-110"
         />

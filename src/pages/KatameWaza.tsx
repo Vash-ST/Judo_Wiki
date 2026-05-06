@@ -183,7 +183,7 @@ export default function KatameWaza() {
       {/* Background Camellia Pattern (Subtle) */}
       <div className="fixed inset-0 z-0 pointer-events-none opacity-[0.02]">
         <img 
-          src="https://images.unsplash.com/photo-1596700021651-7f8d689622ed?auto=format&fit=crop&q=80&w=2000" 
+          src="/assets/rei_saludos.jpg" 
           alt="Camellia pattern"
           className="w-full h-full object-cover grayscale"
         />
@@ -191,6 +191,9 @@ export default function KatameWaza() {
 
       {/* Space for global Navbar */}
       <div className="h-16 md:h-24" />
+      <Link to="/tecnicas" className="fixed top-28 left-6 z-50 p-2 text-black hover:text-brand-red transition-colors">
+         <ArrowLeft className="w-6 h-6" />
+      </Link>
 
       {/* Mobile Navigation Block (Visible only on mobile) */}
       <div className="md:hidden pt-4 pb-8 px-6 flex flex-col items-center z-40 bg-[#f8f8f8]">

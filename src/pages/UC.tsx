@@ -7,7 +7,7 @@ export default function UC() {
     <div className="min-h-screen bg-[#f8f8f8] text-brand-dark font-sans relative overflow-hidden">
       <div className="fixed inset-0 pointer-events-none opacity-[0.02]">
         <img 
-          src="https://images.unsplash.com/photo-1596700021651-7f8d689622ed?auto=format&fit=crop&q=80&w=2000" 
+          src="/assets/rei_saludos.jpg" 
           alt="Pattern"
           className="w-full h-full object-cover grayscale"
         />
@@ -62,7 +62,7 @@ export default function UC() {
                 <div className="order-2 md:order-1 relative group">
                   <div className="aspect-[4/3] bg-white border border-black/5 p-4 shadow-2xl relative z-10 overflow-hidden">
                     <img 
-                      src="https://images.unsplash.com/photo-1541512406536-f6d89552140a?auto=format&fit=crop&q=80&w=1000" 
+                      src="/assets/tarjeta.png" 
                       alt="Historia Judo UC" 
                       className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000"
                     />

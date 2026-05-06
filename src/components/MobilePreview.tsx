@@ -25,7 +25,7 @@ export default function MobilePreview() {
               <span className="text-[10px] font-traditional opacity-30 uppercase tracking-[0.2em]">Conexión Estable</span>
               <div className="w-8 h-8 rounded-full border border-white/20 p-0.5" id="user-avatar">
                 <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" 
+                  src="/assets/uniforme.png" 
                   alt="User" 
                   className="w-full h-full rounded-full object-cover grayscale brightness-125"
                 />

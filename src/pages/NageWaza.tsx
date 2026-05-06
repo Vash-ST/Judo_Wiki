@@ -230,7 +230,7 @@ export default function NageWaza() {
       ? '/assets/tarjeta_4.jpg'
       : (activeSubCategory === 'YOKO-SUTEMI-WAZA')
       ? '/assets/targeta_5.jpg'
-      : `https://images.unsplash.com/photo-${1579783902614 + i}-a3fb3927b6a5?auto=format&fit=crop&q=80&w=800`;
+      : '/assets/tarjeta.png';
 
     // Video URL: Use specific IDs for TE-WAZA, ASHI-WAZA and KOSHI-WAZA
     let videoId = "zIq0xI0ogxk"; // Default
@@ -299,7 +299,7 @@ export default function NageWaza() {
       {/* Background Camellia Pattern (Subtle) */}
       <div className="fixed inset-0 z-0 pointer-events-none opacity-[0.02]">
         <img 
-          src="https://images.unsplash.com/photo-1596700021651-7f8d689622ed?auto=format&fit=crop&q=80&w=2000" 
+          src="/assets/rei.png" 
           alt="Camellia pattern"
           className="w-full h-full object-cover grayscale"
         />
@@ -307,6 +307,9 @@ export default function NageWaza() {
 
       {/* Space for global Navbar */}
       <div className="h-16 md:h-24" />
+      <Link to="/tecnicas" className="fixed top-28 left-6 z-50 p-2 text-black hover:text-brand-red transition-colors">
+         <ArrowLeft className="w-6 h-6" />
+      </Link>
 
       {/* Mobile Navigation Block (Visible only on mobile) */}
       <div className="md:hidden pt-4 pb-8 px-6 flex flex-col items-center z-40 bg-[#f8f8f8]">

@@ -9,7 +9,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=2070" 
+          src="/assets/portada_01.jpg" 
           alt="Mountain Sunset"
           className="w-full h-full object-cover opacity-40 mix-blend-overlay"
         />

@@ -9,7 +9,7 @@ export default function SaludBienestar() {
       jp: "世界保健機関",
       desc: "Directrices mundiales sobre la actividad física para la salud y la prevención de enfermedades.",
       icon: <ShieldCheck className="w-6 h-6" />,
-      img: "https://ygabogados.com/wp-content/uploads/2020/05/OMS-logo.jpg",
+      img: "/assets/logo_uc.png.jpg",
       path: "/recomendacion-oms"
     },
     {
@@ -17,7 +17,7 @@ export default function SaludBienestar() {
       jp: "精神的幸福",
       desc: "Guía integral con herramientas y estrategias para fortalecer la salud y prevenir riesgos en la comunidad universitaria.",
       icon: <Brain className="w-6 h-6" />,
-      img: "https://cdn.pixabay.com/photo/2023/09/27/02/10/runner-8278516_1280.jpg",
+      img: "/assets/tarjeta.png",
       path: "/factores-salud"
     },
     {
@@ -25,7 +25,7 @@ export default function SaludBienestar() {
       jp: "健康、運動、スポーツ",
       desc: "Guía técnica sobre actividad física, entrenamiento y prevención de lesiones basada en estándares internacionales.",
       icon: <Dumbbell className="w-6 h-6" />,
-      img: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&q=80&w=800",
+      img: "/assets/tarjeta_3.jpg",
       path: "/guia-salud-deporte"
     }
   ];
@@ -34,7 +34,7 @@ export default function SaludBienestar() {
     <div className="min-h-screen bg-[#f8f8f8] text-brand-dark font-sans relative overflow-hidden">
       <div className="fixed inset-0 pointer-events-none opacity-[0.02]">
         <img 
-          src="https://images.unsplash.com/photo-1596700021651-7f8d689622ed?auto=format&fit=crop&q=80&w=2000" 
+          src="/assets/rei_saludos.jpg" 
           alt="Pattern"
           className="w-full h-full object-cover grayscale"
         />
