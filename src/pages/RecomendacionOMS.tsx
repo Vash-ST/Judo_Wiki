@@ -162,14 +162,23 @@ export default function RecomendacionOMS() {
               <p className="text-brand-dark/60 font-traditional mb-8 max-w-xl mx-auto">
                 Accede a la publicación original de la OMS con todas las directrices detalladas sobre actividad física para la salud.
               </p>
-              <a 
-                href="https://iris.who.int/bitstream/handle/10665/44422/9789241599979_es.pdf" 
-                target="_blank" 
-                rel="noreferrer"
-                className="inline-flex items-center gap-3 bg-brand-red text-white px-10 py-4 rounded-none font-japanese font-bold tracking-[0.3em] uppercase text-xs hover:bg-brand-navy transition-all duration-300 shadow-lg hover:shadow-brand-navy/20"
-              >
-                Descargar Archivo Original
-              </a>
+              <div className="flex gap-4 justify-center">
+                <a 
+                  href="/doc/recomendacion_oms.pdf" 
+                  download="recomendacion_oms.pdf"
+                  className="inline-flex items-center gap-3 bg-brand-red text-white px-10 py-4 rounded-none font-japanese font-bold tracking-[0.3em] uppercase text-xs hover:bg-brand-navy transition-all duration-300 shadow-lg hover:shadow-brand-navy/20"
+                >
+                  Descargar Archivo Original
+                </a>
+                <a 
+                  href="https://agenda.saludybienestar.uc.cl/" 
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-3 bg-brand-navy text-white px-10 py-4 rounded-none font-japanese font-bold tracking-[0.3em] uppercase text-xs hover:bg-brand-red transition-all duration-300 shadow-lg hover:shadow-brand-navy/20"
+                >
+                  Ir a la Agenda
+                </a>
+              </div>
             </div>
           </div>
 

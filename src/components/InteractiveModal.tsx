@@ -57,7 +57,7 @@ export default function InteractiveModal({ onClose }: { onClose: () => void }) {
       <div className="flex flex-col md:flex-row w-full h-full">
         {/* Left Half: Image with Background */}
         <div 
-          className="w-full md:w-1/2 flex items-center justify-center relative p-0 h-1/2 md:h-full bg-cover bg-center"
+          className="w-full md:w-1/2 flex items-center justify-center relative p-0 h-1/3 md:h-full bg-cover bg-center"
           style={{ backgroundImage: "url('/assets/fondos/fondo_01.jpg')" }}
         >
           <AnimatePresence mode="wait">
@@ -93,7 +93,7 @@ export default function InteractiveModal({ onClose }: { onClose: () => void }) {
         </div>
 
         {/* Right Half: Content (Brand Navy) */}
-        <div className="w-full md:w-1/2 bg-brand-navy flex flex-col justify-center p-8 md:p-16 text-white h-1/2 md:h-full">
+        <div className="w-full md:w-1/2 bg-brand-navy flex flex-col justify-start md:justify-center p-6 md:p-16 text-white h-auto md:h-full overflow-y-auto">
           <AnimatePresence mode="wait">
             <motion.div
               key={active}
@@ -102,10 +102,10 @@ export default function InteractiveModal({ onClose }: { onClose: () => void }) {
               exit={{ opacity: 0, y: -20 }}
               className="mt-auto mb-auto"
             >
-              <div className="text-4xl font-black leading-none opacity-50 mb-2 tracking-[0.2em] font-sans">SENSEI</div>
-              <h2 className="text-6xl font-black font-sans uppercase mb-8 text-brand-red">{sections[active].title}</h2>
+              <div className="text-2xl md:text-4xl font-black leading-none opacity-50 mb-2 tracking-[0.2em] font-sans">SENSEI</div>
+              <h2 className="text-4xl md:text-6xl font-black font-sans uppercase mb-6 md:mb-8 text-brand-red">{sections[active].title}</h2>
               
-              <div className="flex gap-8 mb-8">
+              <div className="flex gap-8 mb-6 md:mb-8">
                 <div>
                   <p className="text-xs text-white/50 uppercase tracking-widest">Nacionalidad</p>
                   <p className="font-sans font-bold text-lg">{sections[active].nationality}</p>
@@ -117,7 +117,7 @@ export default function InteractiveModal({ onClose }: { onClose: () => void }) {
               </div>
               
               <div className="border-l-2 border-brand-red pl-6 py-2">
-                <p className="text-lg text-white/90 leading-relaxed italic">{sections[active].briefDesc}</p>
+                <p className="text-base md:text-lg text-white/90 leading-relaxed italic">{sections[active].briefDesc}</p>
               </div>
             </motion.div>
           </AnimatePresence>

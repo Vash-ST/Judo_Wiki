@@ -191,12 +191,15 @@ export default function KatameWaza() {
 
       {/* Space for global Navbar */}
       <div className="h-16 md:h-24" />
-      <Link to="/tecnicas" className="fixed top-28 left-6 z-50 p-2 text-black hover:text-brand-red transition-colors">
+      <Link to="/tecnicas" className="fixed top-28 left-6 z-50 p-2 text-black hover:text-brand-red transition-colors hidden md:block">
          <ArrowLeft className="w-6 h-6" />
       </Link>
 
       {/* Mobile Navigation Block (Visible only on mobile) */}
       <div className="md:hidden pt-4 pb-8 px-6 flex flex-col items-center z-40 bg-[#f8f8f8]">
+        <Link to="/tecnicas" className="w-full mb-4 flex items-center justify-center gap-2 bg-brand-dark text-white py-3 rounded-full text-[10px] font-bold tracking-widest uppercase">
+           <ArrowLeft className="w-4 h-4" /> Volver a Técnicas
+        </Link>
         <div className="w-full max-w-sm bg-white rounded-[2.5rem] p-6 shadow-[0_10px_30px_rgba(0,0,0,0.04)] flex flex-col gap-6">
           <div className="flex gap-2 w-full">
             {['OSAEKOMI-WAZA', 'SHIME-WAZA', 'KANSETSU-WAZA'].map((sub) => (

@@ -275,9 +275,8 @@ export default function FactoresSaludUC() {
                 Agendar Consejería
               </a>
               <a 
-                href="https://asuntosestudiantiles.uc.cl/images/Manual_Factores_Protectores_UC_2025.pdf" 
-                target="_blank"
-                rel="noreferrer"
+                href="/doc/factores_protectores_salud_2025.pdf" 
+                download="factores_protectores_salud_2025.pdf"
                 className="bg-brand-navy text-white py-5 px-12 font-japanese font-bold tracking-[0.3em] uppercase text-xs hover:bg-brand-red transition-all shadow-xl flex items-center justify-center gap-3"
               >
                 <Download className="w-4 h-4" />

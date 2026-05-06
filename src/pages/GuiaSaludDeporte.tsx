@@ -219,9 +219,8 @@ export default function GuiaSaludDeporte() {
               Descarga el manual completo en formato PDF para profundizar en las técnicas de prevención y entrenamiento deportivo.
             </p>
             <a 
-              href="https://asuntosestudiantiles.uc.cl/images/Manual_GuÃ­a_Salud_Actividad_FÃ­sica.pdf" 
-              target="_blank" 
-              rel="noreferrer"
+              href="/doc/ejercicio_deporte.pdf" 
+              download="ejercicio_deporte.pdf"
               className="inline-flex items-center gap-4 bg-brand-red text-white py-5 px-12 font-japanese font-bold tracking-[0.3em] uppercase text-xs hover:bg-white hover:text-brand-red transition-all shadow-2xl"
             >
               <Download className="w-4 h-4" /> Descargar PDF Original

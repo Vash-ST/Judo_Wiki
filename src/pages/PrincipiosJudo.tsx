@@ -8,6 +8,7 @@ export default function PrincipiosJudo() {
   const [hoveredPart, setHoveredPart] = useState<string | null>(null);
   const [activeUkemiVideo, setActiveUkemiVideo] = useState<string | null>(null);
   const [isInteractiveModalOpen, setIsInteractiveModalOpen] = useState(false);
+  const [isMobileDescriptionVisible, setIsMobileDescriptionVisible] = useState(false);
 
   const principles = [
     {
@@ -205,8 +206,8 @@ export default function PrincipiosJudo() {
                 ]
               }
             ].map((ukemi, idx) => (
-              <div key={idx} className="bg-white rounded-[2rem] p-4 shadow-xl shadow-brand-navy/5 border border-gray-100 flex flex-col group hover:-translate-y-2 transition-all duration-300">
-                <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden mb-6 relative">
+              <div key={idx} className="bg-white rounded-[2rem] p-3 sm:p-4 shadow-xl shadow-brand-navy/5 border border-gray-100 flex flex-col group hover:-translate-y-2 transition-all duration-300">
+                <div className="w-full h-48 sm:h-56 md:h-64 aspect-[16/9] md:aspect-[4/3] rounded-2xl overflow-hidden mb-4 md:mb-6 relative">
                   <img src={ukemi.image} alt={ukemi.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 rounded-2xl" />
                 </div>
                 <div className="px-2 pb-2 flex-grow flex flex-col">
@@ -706,13 +707,14 @@ export default function PrincipiosJudo() {
               <p className="text-[#6c675e] font-sans text-sm md:text-base leading-relaxed mb-8 max-w-md">
                 Descarga el archivo original con toda la información detallada sobre los principios, técnicas y la historia completa del Judo.
               </p>
-              <button
-                onClick={() => setIsInteractiveModalOpen(true)}
+              <a
+                href="/doc/principios_judo.pdf"
+                download="principios_judo.pdf"
                 className="inline-flex items-center gap-3 px-8 py-4 bg-[#1a1f26] text-white rounded-full font-sans text-xs font-bold tracking-[0.2em] uppercase hover:bg-[#fc654c] transition-colors duration-300 group"
               >
                 <span>Descargar PDF Original</span>
                 <Download className="w-4 h-4 group-hover:-translate-y-1 transition-transform" />
-              </button>
+              </a>
             </div>
           </motion.div>
         </div>
@@ -725,7 +727,7 @@ export default function PrincipiosJudo() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             className="fixed inset-0 z-[100] bg-white"
-            onClick={() => setActiveModal(null)}
+            onClick={() => { setActiveModal(null); setIsMobileDescriptionVisible(false); }}
           >
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -736,21 +738,38 @@ export default function PrincipiosJudo() {
             >
               <div className="p-8">
                 <button
-                  onClick={() => setActiveModal(null)}
+                  onClick={() => { setActiveModal(null); setIsMobileDescriptionVisible(false); }}
                   className="p-2 text-brand-navy hover:text-brand-red transition-all duration-300 hover:scale-110"
                 >
                   <X className="w-8 h-8" strokeWidth={1.5} />
                 </button>
               </div>
-              <div className="flex flex-col md:flex-row gap-8 flex-grow items-start justify-start p-6 md:p-12 max-w-7xl mx-auto h-full">
-                <div className="w-full md:w-5/12 flex items-start justify-center">
+              <div className="flex flex-col md:flex-row gap-8 flex-grow items-center justify-center p-6 md:p-12 max-w-7xl mx-auto h-full overflow-y-auto">
+                <div className={`w-full md:w-5/12 flex items-start justify-center h-[50vh] md:h-auto shrink-0 ${isMobileDescriptionVisible ? 'hidden' : 'flex'}`}>
                   <img
                     src="/assets/dojo.png"
                     alt="Dojo"
-                    className="w-full h-auto object-contain max-w-md rounded-2xl shadow-sm"
+                    className="w-full h-full object-contain rounded-2xl shadow-sm"
                   />
                 </div>
-                <div className="flex flex-col gap-6 text-brand-navy w-full md:w-6/12 h-auto max-h-[80vh] overflow-y-auto pr-2 custom-scrollbar">
+                
+                {/* Botón Ver descripción (visible only on mobile) */}
+                <div className={`w-full flex justify-center mt-4 md:hidden ${isMobileDescriptionVisible ? 'hidden' : 'flex'}`}>
+                    <button 
+                        onClick={() => { setIsMobileDescriptionVisible(true); }}
+                        className="px-4 py-2 bg-brand-navy text-white rounded-full text-xs uppercase tracking-widest"
+                    >
+                        Ver descripción
+                    </button>
+                </div>
+                
+                <div className={`flex flex-col gap-6 text-brand-navy w-full md:w-6/12 h-auto max-h-[80vh] overflow-y-auto pr-2 pb-12 custom-scrollbar ${isMobileDescriptionVisible ? 'flex' : 'hidden md:flex'}`}>
+                  <button 
+                        onClick={() => { setIsMobileDescriptionVisible(false); }}
+                        className="md:hidden self-start px-4 py-2 bg-brand-red text-white rounded-full text-xs uppercase tracking-widest mb-4"
+                    >
+                        Dojo (Ver imagen)
+                    </button>
                   <h3 className="font-serif text-4xl font-black tracking-tight">Conceptos en el Dojo</h3>
                   <div className="space-y-4 w-full max-w-xl">
                     {[{
