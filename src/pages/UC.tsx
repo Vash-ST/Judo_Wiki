@@ -125,7 +125,7 @@ export default function UC() {
                       "La mujer no está hecha para luchar, sino para procrear" — Un paradigma superado que marcó el inicio de la lucha por la inclusión. Se creía que el ejercicio podía afectar la función reproductiva.
                     </p>
                     <p>
-                      Jigoro Kano abrazó este concepto limitando el judo femenino a la educación física y moral, centrándose en el <span className="text-brand-navy font-bold">Kata y Randori</span> para que no fuera "dañino para sus cuerpos". Sin embargo, la historia demostró una realidad muy distinta.
+                      Jigoro Kano abrazó este concepto limitando el judo femenino a la educación física y moral, centrándose en el <span className="text-brand-navy font-bold">Kata y Randori</span> para que no fuera "dañino para sus cuerpos". Sin embargo, la historia demostró una reality muy distinta.
                     </p>
                     <p>
                       En la <span className="font-bold">UC</span>, nuestra selección cuenta con una gran representatividad. En 2018, las damas obtuvieron el tercer lugar nacional LDES y segundas en FENAUDE, demostrando un alza constante en la participación femenina que hoy suma más de 50 estudiantes en cursos y seleccionadas.

@@ -10,10 +10,11 @@ interface VideoPlayerProps {
   imageUrl?: string;
   showSaludo?: boolean;
   section?: string;
+  autoStart?: boolean;
 }
 
-export default function VideoPlayer({ src, onClose, imageUrl, showSaludo, section }: VideoPlayerProps) {
-  const [hasStarted, setHasStarted] = useState(false);
+export default function VideoPlayer({ src, onClose, imageUrl, showSaludo, section, autoStart = false }: VideoPlayerProps) {
+  const [hasStarted, setHasStarted] = useState(autoStart);
   const [isSaludoVisible, setIsSaludoVisible] = useState(!!showSaludo);
 
   useEffect(() => {

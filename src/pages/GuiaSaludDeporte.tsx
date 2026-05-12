@@ -21,7 +21,7 @@ export default function GuiaSaludDeporte() {
       title: "Actividad Física",
       icon: <Activity className="w-8 h-8 text-brand-red" />,
       jp: "身体活動",
-      content: "Según la OMS, consiste en actividades recreativas, desplazamientos, tareas domésticas o juegos en el contexto diario.",
+      content: "Según la OMS, consiste en actividades recreativas, desplazamientos, tareas domésticas o juegos en el context diario.",
       points: [
         "Recomendación: 150 a 300 min semanales de actividad moderada.",
         "Alternativa: 75 a 150 min semanales de actividad vigorosa.",
